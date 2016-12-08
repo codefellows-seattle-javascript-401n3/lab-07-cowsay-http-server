@@ -1,0 +1,15 @@
+{
+  "name": "lab-kyle",
+  "version": "1.0.0",
+  "description": "Code Fellows 401 - Lab-07-cowsay-server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Kyle Winckler",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
+}
