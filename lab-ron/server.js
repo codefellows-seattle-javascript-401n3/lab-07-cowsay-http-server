@@ -23,10 +23,10 @@ const server = http.createServer(function(req, res) {
     console.log(say);
     if(say) {
       res.writeHead(200,{'Content-Type': 'text/plain'});
-      res.write(cowsay.say({text: say, f: 'elephant'}));
+      res.write(cowsay.say({text: say, f: 'dragon'}));
     } else {
       res.writeHead(400, {'Content-Type': 'text/plain'});
-      res.write(cowsay.say({text: 'bad request\n try:localhost:3000/cowsay?text=say'}) + '\n');
+      res.write(cowsay.say({text: 'bad request\n try:localhost:3000/cowsay?text=howdy'}) + '\n');
     }
     res.end();
   }
