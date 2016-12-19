@@ -1,0 +1,25 @@
+{
+  "name": "lab-07-jr",
+  "version": "1.0.0",
+  "description": "http lab",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jurrish/lab-07-cowsay-server.git"
+  },
+  "author": "jr",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jurrish/lab-07-cowsay-server/issues"
+  },
+  "homepage": "https://github.com/jurrish/lab-07-cowsay-server#readme",
+  "dependencies": {
+    "cowsay": "^1.1.8"
+  }
+}
