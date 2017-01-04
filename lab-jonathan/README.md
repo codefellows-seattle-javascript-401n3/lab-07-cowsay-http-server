@@ -1,1 +1,0 @@
-This project is an http server, with a GET and a POST request.  I'm pulling out/parsing the query/message from the head on the GET and the body on the POST and running through Cowsay to reflect to the screen.  
