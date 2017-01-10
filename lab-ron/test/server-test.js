@@ -1,9 +1,14 @@
-'use strict'
+'use strict';
+const request = require('superagent');
+const expect = require('chai').expect;
+const assert = require('assert');
+// const chaiHttp  = require('chai-http');
 
-const chai = require('chai')
-// const chaiHttp = require('chai-http')
-const expect = require('chai').expect
 
-describe('this will test my server status', () => {
-  it('should see a response of 200 when connected to server')
+describe('cowsay response', function() {
+  describe('what you should see when you c.u.r.l. http://localhost:3000/cowsay?text=HolyCow!', function() {
+    it('should read HolyCow!', function() {
+      assert.equal()
+    })
+  })
 })

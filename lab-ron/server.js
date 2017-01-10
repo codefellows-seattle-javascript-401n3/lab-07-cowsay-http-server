@@ -16,13 +16,13 @@ const server = http.createServer(function(req, res) {
 
   if(req.method === 'GET' && req.url.pathname === '/') {
     res.writeHead(200, {'Content-Type' : 'text/plain'});
-    res.write(cowsay.say({text: 'Hello world, single slash\n.'}));
+    res.write(cowsay.say({text: 'Hello world\n.'}));
   }
   if(req.method === 'GET' && req.url.pathname === '/cowsay') {
     let say = req.url.query.text;
     console.log(say);
     if(say) {
-      res.writeHead(200,{'Content-Type': 'text/plain'});
+      res.writeHead(200, {'Content-Type': 'text/plain'});
       res.write(cowsay.say({text: say, f: 'dragon'}));
     } else {
       res.writeHead(400, {'Content-Type': 'text/plain'});
