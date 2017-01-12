@@ -17,10 +17,11 @@ gulp.task('test', function() {
 
 gulp.task('eslint', function() {
   return gulp.src(['**/*.js', '!node_modules/**'])
-  .pipe(eslint({ fix: true}))
-  .pipe(eslint.format())
-  .pipe(eslint.failAfterError());
+    .pipe(eslint())
+    .pipe(eslint.format())
+    .pipe(eslint.failAfterError());
 });
+
 
 gulp.task('dev', function() {
   gulp.watch(['**/*.js', '!node_modules/**'], ['test', 'eslint']);
