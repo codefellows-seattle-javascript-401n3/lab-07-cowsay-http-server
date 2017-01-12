@@ -2,7 +2,7 @@
 
   // Will parse the JSON body
 
-module.exports = function(req, err, cb) {
+module.exports = function(req, cb, err) {
   req.body = '';
   req.on('data', function(data) {
     req.body += data.toString();
