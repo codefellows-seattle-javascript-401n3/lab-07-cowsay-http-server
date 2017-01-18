@@ -22,11 +22,13 @@
   },
   "homepage": "https://github.com/silvershotm1/lab-07-cowsay-server#readme",
   "devDependencies": {
+    "chai": "^3.5.0",
     "eslint": "^3.11.1",
     "gulp": "^3.9.1",
     "gulp-eslint": "^3.0.1",
     "gulp-mocha": "^3.0.1",
-    "mocha": "^3.2.0"
+    "mocha": "^3.2.0",
+    "superagent": "^3.3.2"
   },
   "dependencies": {
     "cowsay": "^1.1.8"

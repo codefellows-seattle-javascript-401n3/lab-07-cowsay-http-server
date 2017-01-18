@@ -15,4 +15,3 @@ module.exports = function(req, cb, err) {
     }
   });
 };
-module.exports = {};

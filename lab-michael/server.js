@@ -55,11 +55,13 @@ const server = http.createServer(function(req, res) {
   if(req.method === 'POST' && req.url.pathname ==='/cowsay') {
     parseBody(req, function(err) {
       if(err) return console.error(err);
-
-      if(req.body.text) {
+      let message = req.body.text;
+      if(message) {
         res.writeHead(200,
           {'Content-Type': 'text/plain'});
-        res.write(cowsay.say({text: req.body.text}));
+        res.write(cowsay.say({
+          text: message,
+        }));
 
       } else {
         res.writeHead(400, {'Content-Type': 'text/plain'});
@@ -72,14 +74,6 @@ const server = http.createServer(function(req, res) {
       return;
     });
   }
-
-  res.writeHead(400, {'Content-Type': 'text/plain'});
-  res.write(cowsay.say({
-    text: 'ERROR 404!!  \nplease try again.',
-    f: 'ghostbusters',
-  }));
-  res.end();
-
 });
 
 server.listen(PORT, function() {
